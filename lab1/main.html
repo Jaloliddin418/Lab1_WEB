@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script  src="script.js" defer></script>
+       <link rel="stylesheet" href="sytles.css">
+       <title>Лаба 1</title>
+</head>
+
+<body>
+       <header>
+              <div>Розметов Джалолиддин P3224 вариант 3410</div>
+       </header>
+       <main>
+              <div id="playground_form_container">
+                     <div id="playground">
+                            <canvas id="canvas_front" width="500" height="500"></canvas>
+                            <canvas id="canvas_back" width="500" height="500"></canvas>
+                     </div>
+                     <form id="form_radius" method ="post" class="form">
+                            <div id="radius_checkbox">
+                                   <input type="number" id="R_text_coord"  name="R_coord"  required min="2" max="5" maxlength="6">
+                                   <label for="X_text_coord">Enter radius coordinate in range (2 ; 5)</label>
+                            
+                            </div>
+                     </form>
+                     <form id="form_coord" method ="post" class="form">
+                            <div id="form_y_coord">
+                            
+                                   <input type="number" id="Y_text_coord" name="Y_coord" required min="-5" max="3" maxlength="6">
+                                   <label for="Y_text_coord">Enter your y coordinate in range (-5 ; 3)</label>
+                            </div>
+                            
+                     </form>
+                     <form id="form_coord" method ="post" class="form">
+                            <div id="form_x_coord" class ="form">
+                            
+                                   <label for ="X_text_coord">Please choose x</label>
+                                   <select name = "X_coord" id = "X_text_coord">
+                                          <option value=""> Please choose option </option>
+                                          <option value = -2> -2 </option>
+                                          <option value = -1.5> -1.5 </option>
+                                          <option value = -1> -1 </option>
+                                          <option value= -0.5> -0.5 </option>
+                                          <option value= 0 > 0 </option>
+                                          <option value = 0.5> 0.5 </option>
+                                          <option value = 1> 1 </option>
+                                          <option value = 1.5> 1.5 </option>
+                                          <option value = 2> 2 </option>
+                                   </select>
+                            </div>
+                            <div>
+                                   <button id="coord_form_button" type="button" class="submit_button">Submit</button>
+                            </div>
+                     </form>
+                     <div id="err_msg"></div>
+              </div>
+              <div id="table_container">
+                     <table id="results_table" class="table">
+                            <thead>
+                                   <tr>
+                                          <th>X Coordinate</th>
+                                          <th>Y Coordinate</th>
+                                          <th>Radius</th>
+                                          <th>Hit</th>
+                                          <th>Time Receive</th>
+                                          <th>Date</th>
+                                   </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                     </table>
+                     <button type="button" id="clear_table_button">Clear</button>
+              </div>
+              
+       </main>
+       <footer>
+              <div>Итмо 2023</div>
+       </footer>
+</body>
+
+</html>
+

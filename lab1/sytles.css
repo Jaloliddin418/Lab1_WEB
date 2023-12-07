@@ -1,0 +1,156 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+header {
+  height: 100px;
+  overflow: visible;
+  border-bottom: 3px solid #000000;
+  background-color: rgb(11, 59, 117);
+}
+header div {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  font-size: 36px;
+  color: #ddd;
+}
+
+#playground_form_container {
+  padding-left: 4%;
+}
+
+#playground {
+  display: grid;
+  height: 500px;
+  width: 500px;
+  border: 3px solid #000000;
+}
+
+#playground > canvas {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#canvas_front {
+  z-index: 1;
+}
+
+#canvas_back {
+  z-index: 0;
+  background-color: whitesmoke;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #232529;
+}
+
+footer {
+  background-color: #1b1d21;
+  display: block;
+  height: auto;
+  margin-top: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+footer div {
+  color: rgb(161, 192, 220);
+}
+
+body {
+  background-color: #1b1d21;
+}
+
+.form > input {
+  width: 30%;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  color: #333;
+  border-radius: px;
+  text-align: left;
+}
+
+.form {
+  font-size: 20px;
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+#err_msg {
+  font-size: 20px;
+  background-color: red;
+}
+
+.submit_button {
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.submit_button:hover {
+  background-color: #ddd;
+}
+
+#results_table {
+  width: 100%;
+}
+#results_table thead {
+  display: table; /* to take the same width as tr */
+  width: 95%; /* - 17px because of the scrollbar width */
+  background-color: rgb(185, 185, 190);
+  border-collapse: collapse;
+}
+#results_table tbody {
+  display: block; /* to enable vertical scrolling */
+  max-height: 200px; /* e.g. */
+  overflow-y: scroll; /* keeps the scrollbar even if it doesn't need it; display purpose */
+  background-color: rgb(197, 223, 235);
+  border-collapse: separate;
+}
+#results_table tbody tr:hover {
+  background-color: #ddd;
+}
+#results_table td {
+  border: 1px solid #000;
+}
+#results_table th, #results_table td {
+  width: 10%; /* to enable "word-break: break-all" */
+  word-break: break-all; /* 4. */
+  border-collapse: collapse;
+  border-style: solid;
+}
+#results_table tr {
+  display: table; /* display purpose; th's border */
+  width: 100%;
+  box-sizing: border-box; /* because of the border (Chrome needs this line, but not FF) */
+  height: 25px;
+}
+#results_table td {
+  text-align: center;
+  border-bottom: none;
+  border-left: none;
+}
+#results_table th {
+  height: 50px;
+}
+
+/*# sourceMappingURL=sytles.css.map */
